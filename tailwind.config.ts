@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
     content: [
+        "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,10 +30,16 @@ const config: Config = {
                 }
             },
             fontFamily: {
-                script: ["var(--font-great-vibes)"],
-                serif: ["var(--font-playfair)"],
-                sans: ["var(--font-lato)"],
-                arabic: ["var(--font-amiri)"],
+                // Romantic calligraphy for names (Pinyon Script)
+                script: ["var(--font-pinyon)", "Pinyon Script", "cursive"],
+                // Decorative ukiran headings (Cinzel Decorative)
+                display: ["var(--font-cinzel)", "Cinzel Decorative", "serif"],
+                // Elegant body text (Cormorant Garamond)
+                serif: ["var(--font-cormorant)", "Cormorant Garamond", "Georgia", "serif"],
+                // Clean sans-serif fallback
+                sans: ["var(--font-lato)", "Lato", "sans-serif"],
+                // Arabic text
+                arabic: ["var(--font-amiri)", "Amiri", "serif"],
             },
             backgroundImage: {
                 'gradient-fusion': 'linear-gradient(to right, #1A5F7A, #8D493A)',
