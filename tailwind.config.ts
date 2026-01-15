@@ -32,6 +32,7 @@ const config: Config = {
                 script: ["var(--font-great-vibes)"],
                 serif: ["var(--font-playfair)"],
                 sans: ["var(--font-lato)"],
+                arabic: ["var(--font-amiri)"],
             },
             backgroundImage: {
                 'gradient-fusion': 'linear-gradient(to right, #1A5F7A, #8D493A)',

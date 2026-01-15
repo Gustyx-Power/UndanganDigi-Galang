@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lato, Great_Vibes } from "next/font/google";
+import { Playfair_Display, Lato, Great_Vibes, Amiri } from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -19,6 +19,12 @@ const greatVibes = Great_Vibes({
   variable: "--font-great-vibes"
 });
 
+const amiri = Amiri({
+  weight: "400",
+  subsets: ["arabic"],
+  variable: "--font-amiri"
+});
+
 export const metadata: Metadata = {
   title: "The Wedding of Galang & Partner",
   description: "Undangan Pernikahan Digital",
@@ -31,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className="scroll-smooth">
-      <body className={`${playfair.variable} ${lato.variable} ${greatVibes.variable} antialiased bg-fusion-light text-fusion-dark`}>
+      <body className={`${playfair.variable} ${lato.variable} ${greatVibes.variable} ${amiri.variable} antialiased bg-fusion-light text-fusion-dark`}>
         {children}
       </body>
     </html>
