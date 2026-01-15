@@ -27,8 +27,8 @@ export default function CoverSection({ guestName, onOpen }: CoverSectionProps) {
 
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-            {/* Background Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-garut-primary via-purworejo-primary to-fusion-dark opacity-90 z-0" />
+            {/* Background Gradient - Brightened */}
+            <div className="absolute inset-0 bg-gradient-to-br from-garut-primary to-purworejo-primary opacity-90 z-0" />
 
             {/* Overlay Pattern/Texture (Optional subtle overlay for readability) */}
             <div className="absolute inset-0 bg-black/20 z-0" />
@@ -50,10 +50,10 @@ export default function CoverSection({ guestName, onOpen }: CoverSectionProps) {
                         The Wedding of
                     </h2>
 
-                    {/* Couple Names */}
-                    <div className="font-script text-5xl md:text-6xl text-fusion-gold drop-shadow-md">
+                    {/* Couple Names - Solid Color for Visibility */}
+                    <h1 className="font-script text-6xl md:text-8xl text-fusion-gold drop-shadow-md">
                         Galang & Resti
-                    </div>
+                    </h1>
 
                     {/* Guest Name Card */}
                     <div className="mt-8 w-full backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-6 shadow-xl">
