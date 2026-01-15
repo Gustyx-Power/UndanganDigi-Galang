@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
     return (
-        <section id="hero" className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden">
+        <section id="opening" className="relative min-h-screen w-full flex flex-col md:flex-row overflow-hidden">
 
             {/* Bride Side (Top/Left - Garut) */}
             <motion.div
