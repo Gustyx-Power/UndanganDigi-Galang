@@ -43,6 +43,8 @@ const config: Config = {
             },
             backgroundImage: {
                 'gradient-fusion': 'linear-gradient(to right, #1A5F7A, #8D493A)',
+                'pattern-garut': "url('/images/batik/garut-batik.png')",
+                'pattern-purworejo': "url('/images/batik/purworejo-batik.png')",
             }
         },
     },

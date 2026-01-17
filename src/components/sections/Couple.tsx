@@ -15,7 +15,8 @@ const COUPLE_IMAGES = {
 export default function CoupleSection() {
     return (
         <section id="couple" className="w-full py-20 pb-40 bg-fusion-light relative overflow-hidden">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="absolute inset-0 bg-pattern-purworejo bg-repeat opacity-20 pointer-events-none" />
+            <div className="max-w-6xl mx-auto px-6 relative z-10">
 
                 <div className="text-center mb-16">
                     <h2 className="font-script text-5xl md:text-6xl text-fusion-dark mb-4">Mempelai</h2>
@@ -30,7 +31,14 @@ export default function CoupleSection() {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true }}
-                            className="bg-garut-bg border border-garut-primary/20 rounded-3xl p-8 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="border border-garut-primary/20 rounded-3xl p-8 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            style={{
+                                backgroundColor: '#F0F9FF',
+                                backgroundImage: "url('/images/batik/garut-batik.png')",
+                                backgroundRepeat: 'repeat',
+                                backgroundSize: '150px',
+                                backgroundBlendMode: 'overlay'
+                            }}
                         >
                             <div className="relative w-48 h-48 mb-6">
                                 <div className="absolute inset-0 rounded-full border-4 border-garut-primary/30 animate-spin-slow-reverse" />
@@ -76,7 +84,14 @@ export default function CoupleSection() {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                             viewport={{ once: true }}
-                            className="bg-purworejo-bg border border-purworejo-primary/20 rounded-3xl p-8 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="border border-purworejo-primary/20 rounded-3xl p-8 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            style={{
+                                backgroundColor: '#FDF8F5',
+                                backgroundImage: "url('/images/batik/purworejo-batik.png')",
+                                backgroundRepeat: 'repeat',
+                                backgroundSize: '200px',
+                                backgroundBlendMode: 'overlay'
+                            }}
                         >
                             <div className="relative w-48 h-48 mb-6">
                                 <div className="absolute inset-0 rounded-full border-4 border-purworejo-primary/30 animate-spin-slow" />
