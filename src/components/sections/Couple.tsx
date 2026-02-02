@@ -45,7 +45,7 @@ export default function CoupleSection() {
                                 <div className="w-full h-full rounded-full bg-garut-primary/10 overflow-hidden border-4 border-white shadow-md relative">
                                     <Image
                                         src={COUPLE_IMAGES.bride}
-                                        alt="Foto Mempelai Wanita - Resti Ananda"
+                                        alt="Foto Mempelai Wanita - Resti Putri"
                                         fill
                                         className="object-cover"
                                         sizes="192px"
@@ -61,7 +61,7 @@ export default function CoupleSection() {
                                 </div>
                             </div>
 
-                            <h3 className="font-script text-5xl text-fusion-dark mb-2">Resti Ananda</h3>
+                            <h3 className="font-script text-5xl text-fusion-dark mb-2">Resti Putri</h3>
                             <p className="font-sans text-sm text-gray-600 mb-6">
                                 Putri Bpk. Asep & Ibu Elis
                             </p>
